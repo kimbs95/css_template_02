@@ -1,0 +1,64 @@
+/* reset 영역 */
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "맑은 고딕" , sans-serif;
+    list-style: none;
+    color: #222328;
+}
+
+a{
+    text-decoration: none;
+    /* color: black; */
+}
+/* common */
+body{
+    width: 1000px;
+    background: #fff;
+    font-size: 20px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 헤더 영역 */
+header{
+    float: left;
+}
+header .top{
+    width: 200px;
+    height: 800px;
+    background: #ccc;
+}
+
+/* 로고 영역 */
+
+header .top .logo{
+    /* height: 40px; */
+    /* margin: 30px 0; */
+    padding: 30px 10px;
+    /* background: orange;     */
+}
+
+/* 메뉴 영역 */
+header .top .menu{
+    width: 95%;
+    text-align: center;
+    margin-right: 15px;
+    height: 50px;
+    line-height: 50px;
+
+
+    
+}
+header .top .menu .navi li {
+    
+    background: black;
+    
+
+}
+header .top .menu .navi li a{
+    color: white;
+    font-weight: bold;
+}
