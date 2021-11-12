@@ -20,19 +20,25 @@ a{
     /* 영역확장 을 위해*/
 
 }
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
 /* header 영역 */
 
 header{
     /* background: orange; */
     float: left;
+    width: 20%;
+    /* 대표한테 가로 사이즈 */
 
 }
 header .top{
     float: left;
     background: #eee;
-    width: 200px;
-    height: 650px;
+    height: 675px;
 }
 header .top .logo{
     /* 박스부터 만들어줌 */
@@ -67,20 +73,212 @@ header .top .menu li a{
 
 
 header .top .menu li a:hover{
-   background: tomato;
+   background: green;
    color: yellow; 
+}
+
+/* bodywrap 영역 */
+
+
+.bodywrap{
+    width: 80%;
+    /* background: orange; */
+    float: right;
+
+}
+
+/* bodywrap  > imgslide 영역 */
+.bodywrap > .imgslide{ 
+    height: 350px;
+    position: relative;
+}
+
+.bodywrap > .imgslide .imgtext {
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(40, 40, 40, 0.3);
+    color: #fff;
+    padding: 10px 40px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* bodywrap > .conternts 영역 */
+.bodywrap .contents{
+    /* background: tomato; */
+    height: 200px;
+    margin-top: 15px;
+    
+}
+/* contents > tapmenu 영역 */
+.bodywrap .contents .tabmenu{
+    width: 40%;
+    float: left;
+    /* background: red; */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.bodywrap .contents .tabmenu > li{
+    float: left;
+    width: 80px;
+    /* border: 2px solid #000; */
+}
+.bodywrap .contents .tabmenu > li > a{
+    font-size: 14px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-bottom-width: 0;
+}
+.bodywrap .contents .tabmenu > li > a:hover{
+    opacity: 0.5;
+}
+.bodywrap .contents .tabmenu > li.active > a{
+    background-color: #fff;
+}
+.bodywrap .contents .tabmenu > li div.notice{
+    width: 290px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    /* background: tomato; */
+    padding: 10px 5px;
+}
+
+.bodywrap .contents .tabmenu > li div.notice ul{
+    /* background: green; */
+}
+
+.bodywrap .contents .tabmenu > li div.notice ul li{
+    padding: 10px 0;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    
+
+}
+.bodywrap .contents .tabmenu > li div.notice ul li:nth-child(even){
+    background: #ccc;
+}
+.bodywrap .contents .tabmenu > li div.notice ul li span{
+    float: right;
+}
+.bodywrap .contents .tabmenu > li div.notice ul li:hover{
+    font-weight: 700;
+}
+
+/* contents > otherwrap 영역 */
+.bodywrap .contents .otherwrap{
+    width: 60%;
+    float: right;
+    /* background: skyblue; */
+    height: 199px;
+    overflow: hidden;
+}
+.bodywrap .contents .otherwrap div img{
+    width: 100%;
+
+
+
+}
+
+.bodywrap .contents .otherwrap .banner{
+    /* background: green; */
+    float: left;
+    width: 60%;
+    height: 199px;
+    position: relative;
+}
+.bodywrap .contents .otherwrap .banner .bntext{
+    width: 200px;
+    
+    
+}
+.bodywrap .contents .otherwrap .shortcut .sctext{
+    width: 100px;
+}
+    .bodywrap .contents .otherwrap .shortcut{
+    /* background: yellow; */
+    float: right;
+    width: 38.5%;
+    margin-left: 1.5%;
+    position: relative;
+
+    
+}
+.bodywrap .contents .otherwrap div h4{
+    height: 40px;
+    color: #fff;
+    background: rgba(40, 40, 40, 0.3);
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+    
+
+
+.bodywrap .contents .otherwrap .shortcut img{
+    height: 199px;
+
+    
+    
+    
+    
 }
 
 
 
+/* footer 영역 */
+footer{
+    float: right;
+    background: #ccc;
+    width: 800px;
+    height: 100px;
+    margin-top: 10px;
+}
+footer .btlogo{
+    float: left;
+    /* background: orange; */
+    width: 200px;
+    height: 100px;
+    /* 이미지를 건드릴때는 액자부터 */
+}
+footer .btlogo img{
+    margin-top: 33px;
+    margin-left: 15px;
+}
+footer .site{
+    float: right;
+    font-size: 14px;
+    margin-right: 100px;
+}
+footer .site .btmenu {
+    /* background:skyblue; */
+    margin-top: 15px;
+    padding-left: 20px;
+}
+footer .site .copy{
+    /* background: pink; */
+    margin-top: 30px;
+}
 
-
-
-
-
-
-
-
+footer .site .btmenu ul li{
+    float: left;
+    margin-right: 40px;
+    
+}
 
 
 
