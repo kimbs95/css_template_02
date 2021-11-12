@@ -1,0 +1,99 @@
+/*common */
+*{
+    /* *은 전체선택자 */
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕" , sans-serif;
+    color: #222328; 
+    /* 글자색 */
+
+}
+body{
+    width: 1000px;
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+    display: block;
+    /* 영역확장 을 위해*/
+
+}
+
+/* header 영역 */
+
+header{
+    /* background: orange; */
+    float: left;
+
+}
+header .top{
+    float: left;
+    background: #eee;
+    width: 200px;
+    height: 650px;
+}
+header .top .logo{
+    /* 박스부터 만들어줌 */
+    width: 200px;
+    height: 40px;
+    /* background: orange; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+header .top .logo img{
+    margin-left: 10px;
+
+}
+header .top .menu{
+    /* background: green; */
+    width: 90%;
+    text-align: center;
+    
+}
+header .top .menu li {
+    /* border: 3px solid #000; */
+    /* box-sizing: border-box; */
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+header .top .menu li a{
+    padding: 10px 0;
+    color: #fff;
+    background: #222328;
+}
+
+
+header .top .menu li a:hover{
+   background: tomato;
+   color: yellow; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

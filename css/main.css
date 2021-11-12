@@ -9,6 +9,7 @@
 
 a{
     text-decoration: none;
+    display: block;
     /* color: black; */
 }
 /* common */
@@ -65,27 +66,47 @@ header .top .menu .navi li a{
 
 /* 와이어프레임 오른쪽 시작  */
 
+/* 슬라이드 이미지 */
+.bodywrap .imgslid {
+    float: left;
+    
+}
+.bodywrap .imgslid .imgtext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
 /* 공지사항 */
 .contents{
     /* width: 400px; */
     height: 200px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     margin: 5px 0;
     
 } 
 .contents .tabmenu {
     /* background: orange; */
     width: 400px;
-    /* border: 3px solid #000; */
+    border: 1px solid #000;
     float: left;
+    
 }
 .contents .tabmenu .active{
-    /* border: 2px solid green; */
-    border: 1px solid gray;
+    /* background: orange; */
+    padding: 5px;
+    /* border: 1px solid #000; */
 }
 
 .contents .tabmenu .active a{
-    padding: 10px;
+    /* border: 1px solid #000; */
+    /* padding: 10px; */
 }
 .contents .tabmenu .active .notice{
     padding: 10px 5px;
