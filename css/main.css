@@ -35,17 +35,16 @@ header .top{
 /* 로고 영역 */
 
 header .top .logo{
-    /* height: 40px; */
-    /* margin: 30px 0; */
     padding: 30px 10px;
-    /* background: orange;     */
+
+  
 }
 
 /* 메뉴 영역 */
 header .top .menu{
     width: 95%;
     text-align: center;
-    margin-right: 15px;
+    margin: 0 auto;
     height: 50px;
     line-height: 50px;
 
@@ -53,6 +52,7 @@ header .top .menu{
     
 }
 header .top .menu .navi li {
+
     
     background: black;
     
@@ -62,3 +62,58 @@ header .top .menu .navi li a{
     color: white;
     font-weight: bold;
 }
+
+/* 와이어프레임 오른쪽 시작  */
+
+/* 공지사항 */
+.contents{
+    /* width: 400px; */
+    height: 200px;
+    border: 2px solid gray;
+    margin: 5px 0;
+    
+} 
+.contents .tabmenu {
+    /* background: orange; */
+    width: 400px;
+    /* border: 3px solid #000; */
+    float: left;
+}
+.contents .tabmenu .active{
+    /* border: 2px solid green; */
+    border: 1px solid gray;
+}
+
+.contents .tabmenu .active a{
+    padding: 10px;
+}
+.contents .tabmenu .active .notice{
+    padding: 10px 5px;
+    
+    
+}
+.contents .tabmenu .active .notice li:nth-child(even)
+{
+    background: gray;
+
+}
+.contents .tabmenu .active .notice li span{ 
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
