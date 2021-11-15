@@ -2,8 +2,8 @@
 *{
     margin: 0 auto;
     padding: 0;
-    font-family: "맑은 고딕" , sans-serif;
     list-style: none;
+    font-family: "맑은 고딕" , sans-serif;
     color: #222328;
 }
 
@@ -26,28 +26,34 @@ body{
 /* 헤더 영역 */
 header{
     float: left;
+    width: 20%;
 }
 header .top{
-    width: 200px;
-    height: 800px;
+    float: left;
+    height: 675px;
     background: #ccc;
 }
 
 /* 로고 영역 */
 
 header .top .logo{
-    padding: 30px 10px;
-
-  
+    /* background: orange; */
+    /* margin: 15px 15px; */
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+header .top .logo img{
+    margin-left: 10px;
 }
 
 /* 메뉴 영역 */
 header .top .menu{
-    width: 95%;
+    width: 90%;
     text-align: center;
-    margin: 0 auto;
-    height: 50px;
-    line-height: 50px;
+    /* height: 50px; */
+    /* line-height: 50px; */
 
 
     
@@ -55,23 +61,49 @@ header .top .menu{
 header .top .menu .navi li {
 
     
-    background: black;
     
+    font-size: 16px;
+    font-weight: 700;
 
 }
 header .top .menu .navi li a{
     color: white;
-    font-weight: bold;
+    background: #000;
+    padding: 10px 0;
+}
+
+header .top .menu .navi li a:hover{
+    background: green;
+    color: yellow;
+
 }
 
 /* 와이어프레임 오른쪽 시작  */
 
 /* 슬라이드 이미지 */
-.bodywrap .imgslid {
-    float: left;
+
+.bodywrap{
+    width: 80%;
+    float: right;
+}
+
+
+.bodywrap > .imgslide {
+    height: 350px;
+    position: relative;
     
 }
-.bodywrap .imgslid .imgtext{
+.bodywrap > .imgslide .imgtext {
+
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(40, 40, 40, 0.3);
+    color: #fff;
+    padding: 10px 40px;
+
     position: absolute;
     left: 50%;
     top: 50%;
@@ -86,33 +118,57 @@ header .top .menu .navi li a{
 /* 공지사항 */
 .contents{
     /* width: 400px; */
-    height: 200px;
     /* border: 2px solid gray; */
-    margin: 5px 0;
+    /* margin: 5px 0; */
+    height: 200px;
+    margin-top: 15px;
     
 } 
 .contents .tabmenu {
     /* background: orange; */
-    width: 400px;
-    border: 1px solid #000;
+    width: 40%;
     float: left;
-    
+    padding:0 10px;
+    box-sizing: border-box;
 }
-.contents .tabmenu .active{
+.contents .tabmenu > li{
     /* background: orange; */
-    padding: 5px;
     /* border: 1px solid #000; */
+    /* padding: 5px; */
+    float: left;
+    width: 80px;
 }
 
-.contents .tabmenu .active a{
-    /* border: 1px solid #000; */
-    /* padding: 10px; */
+.contents .tabmenu > li > a{
+    font-size: 14px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-bottom-width: 0;
 }
-.contents .tabmenu .active .notice{
+
+.contents .tabmenu > li > a:hover{
+    opacity: 0.5;
+}
+
+.contents .tabmenu > li.active > a{
+    background-color: #fff;
+}
+
+.contents .tabmenu > li div.notice{
     padding: 10px 5px;
-    
-    
+    font-size: 13px;
+    border: 1px solid #ddd;
+    width: 290px;
 }
+
+.contents .tabmenu > li div.notice ul li{
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+
 .contents .tabmenu .active .notice li:nth-child(even)
 {
     background: gray;
@@ -122,19 +178,95 @@ header .top .menu .navi li a{
     float: right;
 }
 
+.contents .tabmenu .active .notice li:hover{
+    font-weight: 700;
+}
+
+/* contents > otherwrap 영역 */
+.bodywrap .contents .otherwrap{
+    width: 60%;
+    float: right;
+    height: 199px;
+    overflow: hidden;
+}
+.bodywrap .contents .otherwrap div img{
+    width: 100%;
+}
+.bodywrap .contents .otherwrap .banner{
+    float: left;
+    width: 60%;
+    height: 199px;
+    position: relative;
+}
+.bodywrap .contents .otherwrap .banner .bntext{
+    width: 200px;
+}
+
+.bodywrap .contents .otherwrap .shortcut .sctext{
+    width: 100px;
+}
+
+.bodywrap .contents .otherwrap .shortcut{
+    float: right;
+    width: 38.5%;
+    margin-left: 1.5%;
+    position: relative;
+}
+
+.bodywrap .contents .otherwrap div h4{
+    height: 40px;
+    color: #fff;
+    background: rgba(40, 40, 40, 0.3);
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.bodywrap .contents .otherwrap .shortcut img{
+    height: 199px;
+}
 
 
+/* footer영역  */
+footer{
+    float: right;
+    background: #ccc;
+    width: 800px;
+    height: 100px;
+    margin-top: 10px;
+}
 
+footer .btlogo{
+    float: left;
+    width: 200px;  
+    height: 100px;
 
+}
+footer .btlogo img{
+    margin-top: 33px;
+    margin-left: 15px;
 
+}
+footer .site{
+    float: right;
+    font-size: 14px;
+    margin-right: 100px;
+}
+footer .site .btmenu{
+    margin-top: 15px;
+    padding-left: 20px;
+    
 
-
-
-
-
-
-
-
-
-
-
+}
+footer .site .copy{
+    margin-top: 30px;
+}
+footer .site .btmenu ul li {
+    float: left;
+    margin-right: 40px;
+}
